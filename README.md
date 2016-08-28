@@ -21,14 +21,14 @@ Setting up Go for local development is a bit different than other languages. You
 
 ```
 Go/
-  src/ - Source files of projects, modules and packages will be installed here.
-    github.com/
-    aws
-    ...
-    golang.org/
-    my-golang-project/
-  bin/ - Binaries will compiled here.
-  pkg/ - Platform specific binaries to be packaged here.
+├── src/ - Source files of projects, modules and packages will be installed here.
+│   ├── github.com/
+│   ├── aws/
+|   ├── ...
+|   ├── golang.org/
+|   └── my-golang-project/ - Your project source.
+├── bin/ - Binaries will be compiled here.
+└── pkg/ - Platform specific binaries to be packaged here.
 ```
 
 ## Setup GOPATH project structure
