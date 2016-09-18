@@ -1,17 +1,24 @@
 # golang-setup
 
 ## Go Setup (for local development)
-Please note: Go 1.4.x is required to build 1.5.x. This is because the Go compiler is written in Go as of 1.5.x. Previous versions' compilers were written in C, hence the instructions below to install 1.4 before 1.5.
+Please note: Go 1.4.x is required to build 1.5+. This is because the Go compiler is written in Go as of 1.5.x. Previous versions' compilers were written in C, hence the instructions below to install 1.4 before 1.5.
 
 * Install Go
+```
+brew install go
+```
 * Install GVM
+  * https://github.com/moovweb/gvm
+  ```
+  zsh < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+  ```
 * Setup GVM/Go environment
 
 ```
-gvm install go1.4.3
-gvm use go1.4.3
-gvm install go1.5.3
-gvm use go1.5.3
+gvm install go1.4 -B
+gvm use go1.4
+export GOROOT_BOOTSTRAP=$GOROOT
+gvm install go1.5
 ```
 
 GVM will automatically set your GOBIN and GOPATH environment variables.
