@@ -7,8 +7,7 @@ Please note: Go 1.4.x is required to build 1.5+. This is because the Go compiler
 ```
 brew install go
 ```
-* Install GVM
-  * https://github.com/moovweb/gvm
+* Install [GVM](https://github.com/moovweb/gvm)
   ```
   zsh < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
   ```
@@ -41,6 +40,7 @@ Go/
 ## Setup GOPATH project structure
 ```
 cd ~/Source/Go
+gvm pkgset create --local
 gvm pkgset use --local
 ```
 
